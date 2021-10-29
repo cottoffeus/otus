@@ -1,0 +1,2 @@
+kubectl apply --validate=true \
+-f https://github.com/jetstack/cert-manager/releases/download/${cert_manager_version}/cert-manager.yaml
