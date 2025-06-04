@@ -6,6 +6,6 @@ mapfile -t files < <(find . -type f -name '*.yaml')
 
 for file in "${files[@]}"; do
     echo "Checking $file"
-    kubectl apply --dry-run=client -f "$file" >/dev/null
+    kubectl apply --dry-run=client --validate=false -f "$file" >/dev/null
 done
 

@@ -10,10 +10,10 @@ This repository contains example Kubernetes resources used in training exercises
 
 ## Testing
 
-Run `tests/test_manifests.sh` to ensure that all YAML files are syntactically valid. The script relies on `kubectl` and performs a dry run for every manifest:
+Run `tests/test_manifests.sh` to ensure that all YAML files are syntactically valid. The script relies on `kubectl` and performs a client-side dry run with validation disabled for every manifest, so no cluster is required:
 
 ```bash
 ./tests/test_manifests.sh
 ```
 
-Make sure `kubectl` is installed and configured before running the tests.
+Make sure `kubectl` is installed; no cluster connection is required to run the tests.
