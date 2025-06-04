@@ -1,17 +1,17 @@
-#apiVersion: v1
-#kind: Service
-#metadata:
-#  name: myapp
-#  namespace: testing
-#spec:
-#  #clusterIP: None 
-#  type: ClusterIP
-#  ports:
-#    - port: 777
-#      targetPort: 5678
-#  selector:
-#    app: myapp
-#---
+# apiVersion: v1
+# kind: Service
+# metadata:
+# name: myapp
+# namespace: testing
+# spec:
+# # clusterIP: None 
+# type: ClusterIP
+# ports:
+# - port: 777
+# targetPort: 5678
+# selector:
+# app: myapp
+# ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -41,10 +41,10 @@ spec:
           ports:
             - containerPort: 5678
           
-#          imagePullPolicy: Always|IfNotPresent|Never
-#          readinessProbe:
-#            httpGet:
-#              path: /
-#              port: 5678
-#            initialDelaySeconds: 5
-#            periodSeconds: 20
+# imagePullPolicy: Always|IfNotPresent|Never
+# readinessProbe:
+# httpGet:
+# path: /
+# port: 5678
+# initialDelaySeconds: 5
+# periodSeconds: 20
