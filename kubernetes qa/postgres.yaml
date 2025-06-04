@@ -50,7 +50,7 @@ spec:
       name: postgredb
     spec:
       accessModes: [ "ReadWriteOnce" ]
-      storageClassName: managed-standart-ssd-retain
+      storageClassName: managed-standard-ssd-retain
       resources:
         requests:
           storage: 4Gi
