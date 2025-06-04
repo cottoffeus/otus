@@ -22,7 +22,7 @@ spec:
           - sh
           - "-c"
           - |
-            PGPASSWORD=passwd psql2 -d myapp -U myuser -h $DATABASE_URI  <<'EOF'
+            PGPASSWORD=passwd psql -d myapp -U myuser -h $DATABASE_URI  <<'EOF'
               INSERT INTO client(id,name) 
               VALUES(DEFAULT,'John');
             EOF
